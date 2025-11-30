@@ -1,0 +1,210 @@
+Python is a high-level, general-purpose, interpreted programming language that is known for its simple syntax and readability.
+It supports multiple programming paradigms such as procedural, object-oriented, and functional programming.
+
+Key features of Python
+  1.Interpreted Language
+ 	  Code is executed line by line using the Python interpreter.
+  2.High-Level Language
+    Easy to read and write because the syntax is close to English.
+  3.Dynamically Typed
+    You don't need to declare data types explicitly.
+  4.Portable & Platform Independent
+    Same Python program works on Windows, Linux, macOS.
+  5.Extensive Standard Library
+    Provides modules for file handling, math, random, datetime, etc.
+  6.Supports Multiple Paradigms
+    Procedural programming
+    Object-oriented programming
+    Functional programming
+  7.Open Source
+    Free to use and maintained by a large community.
+    
+Python Interpreter vs Interactive Mode
+  The Python interpreter is the program that reads and executes Python code line by line.
+  It takes a .py file and runs it.
+  Interactive mode is a mode of the interpreter where Python executes each line immediately as you type it.
+
+VARIABLES
+  A variable is a name that stores a value in memory.
+  It acts as a container for data.
+
+  x = 10
+  name = "Ananya"
+  Here, x and name are variables.
+
+  Types of Variables 
+    1.Local Variable – inside a function
+    2.Global Variable – outside all functions
+  
+IDENTIFIERS
+  An identifier is the name used to identify a variable, function, class, module, etc.
+  
+  Rules for Identifiers (Must write in exam)
+    1.Must start with a letter or underscore
+      valid → name, _value
+      invalid → 1name, @data
+    2.Can contain letters, digits, underscores only
+      total1, value_2  ✔
+      a-b, x@y         ✘
+    3.Case-sensitive
+      age ≠ Age ≠ AGE
+
+    4.Cannot use Python keywords
+      Examples of keywords:if, else, for, while, class, def, True, False, break, return, import
+      if = 10   # invalid
+    5.No spaces allowed
+      total marks  ✘
+      total_marks ✔
+    6.Cannot use special characters(Except underscore _)
+      name@  ✘
+      name_ ✔
+
+ARITHMETIC OPERATORS
+    +   (Addition) → adds two values
+        (Example: 5 + 3 = 8)
+    -   (Subtraction) → subtracts right operand from left
+        (Example: 10 - 4 = 6)
+    *   (Multiplication) → multiplies values
+        (Example: 6 * 7 = 42)
+    /   (Division) → normal division, always gives float
+        (Example: 7 / 2 = 3.5)
+    //   (Floor Division) → gives integer part only
+        (Example: 7 // 2 = 3)
+    %   (Modulus) → returns remainder
+        (Example: 10 % 3 = 1)
+    **   (Exponent) → power
+         (Example: 2 ** 3 = 8)
+VALUES AND TYPES
+	A value is any piece of data used in a Python program.
+
+	Types in Python:
+		1. Numeric Types
+			Used to store numbers.
+				✔ int – integer values
+				Examples: 10, -5, 0
+				✔ float – decimal values
+				Examples: 3.14, 2.0
+				✔ complex – complex numbers (a + bj)
+				Examples: 2+3j, -4j
+			
+		2. Boolean Type
+			✔ bool – represents True/False
+			Examples: True, False			
+			Used in conditions and comparisons.
+
+		3. Sequence Types
+				Ordered collection of items.			
+					✔ string (str) – sequence of characters				
+					Example: "hello", 'A'				
+					✔ list – mutable sequence			
+					Example: [1, 2, 3]			
+					✔ tuple – immutable sequence			
+					Example: (4, 5, 6)
+
+		4. Set Types	
+				Unordered collection of unique items.		
+					✔ set
+					Example: {1, 2, 3}
+					✔ frozenset – immutable set
+					Example: frozenset({1, 2, 3})
+		5. Dictionary Type
+				Stores key–value pairs.			
+					✔ dict
+					Example: {"name": "Ananya", "age": 20}
+		6. None Type
+				Represents “no value”.		
+				✔ NoneType
+				Example: x = None
+
+STATEMENTS IN PYTHON
+	A statement is an instruction the Python interpreter can execute.Each line is a separate statement.
+	
+	Types of Statements:
+		1. Assignment Statements
+				name = "Python"
+				age = 30
+		2. Conditional Statements
+				age = 20
+				if age > 18:
+				    print("You are an adult")     # Output: You are an adult
+				else:
+				    print("You are a minor")	
+		3. Looping Statements
+				for i in range(3):
+				    print("Hello")                 # Output: Hello (3 times)		
+		4. Import Statements
+				import math
+				print(math.sqrt(16))               # Output: 4.0		
+		5. Exception Handling Statements
+				try:
+				    x = 1 / 0
+				except ZeroDivisionError:
+				    print("Division by zero not allowed")  # Output: Division by zero not allowed		
+		6. Flow Control Statements
+				break – stop loop		
+				continue – skip iteration
+				pass – do nothing
+				return – exit function
+		7.MULTI-LINE STATEMENTS
+			✔ Using backslash \
+					s = 1 + 2 + 3 + \
+					    4 + 5 + 6 + \
+					    7 + 8 + 9
+					print(s)                          # Output: 45		
+			✔ Using parentheses ()
+					n = (1 * 2 * 3 +
+					     4 + 5 + 6)
+					print(n)                          # Output: 21
+			✔ Using square brackets []
+					footballers = [
+					    "Messi",
+					    "Neymar",
+					    "Suarez"
+					]
+					print(footballers)                # Output: ['Messi', 'Neymar', 'Suarez']		
+			✔ Using braces {}
+					numbers = {1, 2, 3,
+					           4, 5}
+					print(numbers)                    # Output: {1, 2, 3, 4, 5}
+		8.Indentation in Python
+			Indentation = spaces at the beginning of a line.
+			Python uses indentation to group code blocks.
+			✔ Rules of Indentation
+				1.Use 4 spaces (PEP 8).
+				2.Blocks must have same indentation level.
+				3.Don’t mix tabs and spaces.
+				(Wrong indent → IndentationError.)
+		9.COMMENTS IN PYTHON
+			Comments are ignored during execution.			
+			✔ Single-line Comments
+					# Adding two numbers
+					a, b = 5, 10
+					print(a + b)                     # Output: 15			
+			✔ Multi-line Comments
+				Method 1: Using multiple #
+					# Line 1
+					# Line 2
+					# Line 3
+					print("Hello")                   # Output: Hello			
+				Method 2: Using triple quotes
+					"""
+					This is a multi-line comment
+					"""
+					print("Python")                  # Output: Python
+		10.Docstring
+				A docstring (documentation string) is a string written inside a function, class, or module to describe what it does.
+				It appears as the first statement inside the block and is written using triple quotes (""" """).			
+				Python stores docstrings and uses them as official documentation for your code.
+				Example
+						def add(a, b):
+						    """This function returns the sum of two numbers."""
+						    return a + b
+						
+						print(add(10, 20))          # Output: 30
+						print(add.__doc__)          # Output: This function returns the s		
+			
+	
+		
+	
+
+  
