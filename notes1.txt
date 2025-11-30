@@ -202,7 +202,224 @@ STATEMENTS IN PYTHON
 						
 						print(add(10, 20))          # Output: 30
 						print(add.__doc__)          # Output: This function returns the s		
+OPERATORS IN PYTHON
+	Python has 7 types of operators:
+		1.Arithmetic Operators
+		2.Relational / Comparison Operators
+		3.Logical Operators
+		4.Assignment Operators
+		5.Bitwise Operators
+		6.Membership Operators
+		7.Identity Operators
+
+	ARITHMETIC OPERATORS
+    +   (Addition) → adds two values
+        (Example: 5 + 3 = 8)
+    -   (Subtraction) → subtracts right operand from left
+        (Example: 10 - 4 = 6)
+    *   (Multiplication) → multiplies values
+        (Example: 6 * 7 = 42)
+    /   (Division) → normal division, always gives float
+        (Example: 7 / 2 = 3.5)
+    //   (Floor Division) → gives integer part only
+        (Example: 7 // 2 = 3)
+    %   (Modulus) → returns remainder
+        (Example: 10 % 3 = 1)
+    **   (Exponent) → power
+         (Example: 2 ** 3 = 8)
+
+	2. RELATIONAL / COMPARISON OPERATORS
+		These operators compare two values and always return a Boolean value → True or False.
+		== (Equal to) → checks if two values are equal
+		(Example: 5 == 5 → True)
+		!= (Not Equal to) → checks if two values are different
+		(Example: 5 != 3 → True)
+		> (Greater than) → checks if left operand is greater
+		(Example: 7 > 4 → True)		
+		< (Less than) → checks if left operand is smaller
+		(Example: 3 < 1 → False)	
+		>= (Greater than or Equal to) → True if greater or same
+		(Example: 5 >= 5 → True)
+		<= (Less than or Equal to) → True if smaller or same
+		(Example: 2 <= 1 → False)
+
+3. Logical Operators
+
+		and → True only if both conditions are True
+		(Example: True and False → False)
+		or → True if at least one condition is True
+		(Example: True or False → True)
+		not → reverses the boolean value
+		(Example: not True → False)
 			
+
+4. Assignment Operators
+
+		= (Assign)
+		(Example: x = 5)		
+		+= (Add & assign)
+		(Example: x += 3 → x = x + 3)
+		-= (Subtract & assign)
+		(Example: x -= 2 → x = x - 2)
+		*= (Multiply & assign)
+		*(Example: x = 4 → x = x * 4)
+		/= (Divide & assign)
+		(Example: x /= 2 → x = x / 2)
+		//= (Floor divide & assign)
+		(Example: x //= 3)
+		%= (Modulus & assign)
+		(Example: x %= 5)
+		**= (Exponent & assign)
+		*(Example: x *= 2)
+
+5. Bitwise Operators
+	(Operate at binary level)
+
+		& (AND)
+		(Example: 5 & 3 → 1)
+		
+		| (OR)
+		(Example: 5 | 3 → 7)	
+		^ (XOR)
+		(Example: 5 ^ 3 → 6)
+		~ (NOT)
+		(Example: ~5 → -6)
+		<< (Left shift)
+		(Example: 5 << 1 → 10)
+		>> (Right shift)
+		(Example: 5 >> 1 → 2)
+
+6. Membership Operators
+
+		in → checks if item exists
+		(Example: 3 in [1,2,3] → True)	
+		not in → checks if item does NOT exist
+		(Example: "a" not in "hello" → True)
+
+7. Identity Operators
+
+		is → checks if two variables refer to same object
+		(Example: a is b)
+		is not → checks if not the same object
+		(Example: a is not b)
+
+Boolean Values in Python
+	Booleans represent True/False values.
+	They are used in conditions, comparisons, loops, and logic operations.
+		Python has only two boolean values:
+						True
+						False
+		🔹 They must start with a capital letter.
+		🔹 They are of type bool.
+
+Operator Precedence (Highest → Lowest)
+
+		1️⃣ () — Parentheses
+				Highest priority
+				Expressions inside brackets are evaluated first
+				Example:
+				(2 + 3) * 4 = 20
+		2️⃣ ** — Exponent
+				Power operation
+				Example:
+				2 ** 3 = 8
+		3️⃣ +x, -x, ~x — Unary Operators	
+				Unary plus, minus, bitwise NOT
+				Example:
+				-5, +3, ~4
+		4️⃣ *, /, //, % — Multiplicative Operators
+				multiply, divide, floor-div, modulus
+				Example:
+				10 / 2 * 3 = 15	
+		5️⃣ +, - — Additive Operators
+				addition and subtraction
+				Example:
+				10 - 3 + 2 = 9	
+		6️⃣ <<, >> — Bitwise Shift
+				Example:
+				4 << 1 = 8		
+		7️⃣ & — Bitwise AND
+				Example:
+				5 & 3 = 1
+		8️⃣ ^ — Bitwise XOR
+				Example:
+				5 ^ 3 = 6
+		9️⃣ | — Bitwise OR
+				Example:
+				5 | 3 = 7
+		🔟 Comparisons
+				==, !=, >, <, >=, <=
+				Example:
+				5 > 3 = True
+		1️⃣1️⃣ not — Logical NOT
+				Example:
+				not True = False
+		1️⃣2️⃣ and — Logical AND
+				Example:
+				True and False = False
+		1️⃣3️⃣ or — Logical OR
+				Example:
+				True or False = True
+EXPRESSION:
+An expression is a combination of values, variables, and operators that Python evaluates to produce a result.
+
+TYPES OF EXPRESSIONS
+
+	1️⃣ Arithmetic Expressions
+			Used for mathematical calculations.
+			Examples:
+			5 + 3 → 8
+			10 / 2 → 5.0
+			2 * (3 + 4) → 14
+	2️⃣ Relational / Comparison Expressions
+			Used to compare values. Result is True or False.
+			Examples:
+			5 > 3 → True
+			10 == 20 → False
+			7 != 2 → True
+	3️⃣ Logical Expressions
+			Combine boolean values using logical operators.
+			Examples:
+			True and False → False
+			5 > 3 and 10 > 8 → True
+			not (5 == 5) → False
+	4️⃣ Assignment Expressions
+			Assign values to variables using =.
+			Examples:
+			x = 10
+			name = "Python"
+			result = 5 * 4
+			Note: Assignment expression does not print value unless we print it.
+	5️⃣ String Expressions
+			Operations performed on strings.
+			Examples:
+			"Hello" + "World" → "HelloWorld"
+			"Python" * 3 → "PythonPythonPython"
+			6️⃣ Bitwise Expressions
+			Work on bits.
+			Examples:
+			5 & 3 → 1
+			5 | 3 → 7
+			5 ^ 3 → 6
+	7️⃣ Membership Expressions
+			Used to check if a value exists in a sequence.
+			Operators → in, not in
+			Examples:
+			"a" in "apple" → True
+			3 in [1,2,4] → False
+	8️⃣ Identity Expressions
+			Used to compare memory location of objects.
+			Operators → is, is not
+			Examples:
+			a = b = 5 → a is b → True
+			[1,2] is [1,2] → False (different objects)
+
+
+
+
+
+
+
 	
 		
 	
